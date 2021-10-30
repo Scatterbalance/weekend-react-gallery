@@ -12,4 +12,42 @@
 .App-title {
   font-size: 1.5em;
 }
+.galleryList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.imageBlock {
+  display: grid;
+  
+  margin: 50px;
 
+
+  
+}
+.image {
+  justify-self: center;
+  border: 20px solid #5934;
+  width: 300px;
+  height: auto;
+  
+  
+}
+.likeButton{
+  justify-self: center;
+  align-self:  end;
+  margin: 5px;
+
+}
+.darkenimage{
+  transform: translate(-50%, -50%);
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    );
+  justify-self: center;
+  border: 20px solid #5934;
+  width: 300px;
+  height: auto;
+
+}
