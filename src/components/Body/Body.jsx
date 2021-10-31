@@ -8,7 +8,7 @@ function Body (props){
     return (
         
         <div>
-            <GalleryList gallery = {props.gallery}/>
+            <GalleryList gallery = {props.gallery} getGallery = {props.getGallery}/>
         
         
         </div>

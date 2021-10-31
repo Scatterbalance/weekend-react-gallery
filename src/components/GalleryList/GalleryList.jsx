@@ -11,7 +11,7 @@ function GalleryList (props){
            <div className ='galleryList'>
                {
 
-            props.gallery.map( (thisItem)=>(<GalleryItem  gallery = {thisItem} key = {thisItem.id}/>))
+            props.gallery.map( (thisItem)=>(<GalleryItem  gallery = {thisItem} key = {thisItem.id} getGallery = {props.getGallery} />))
            }
            </div>
         

@@ -32,7 +32,7 @@ const getGallery=()=>{
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <Body gallery = {gallery}/>
+        <Body gallery = {gallery} getGallery = {getGallery}/>
         
         <p>{JSON.stringify(gallery)}Gallery goes here</p>
         <img src="images/goat_small.jpg"/>
