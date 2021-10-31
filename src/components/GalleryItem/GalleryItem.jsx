@@ -12,6 +12,7 @@ function GalleryItem (props){
     const toggleImage = () =>{
         console.log( 'in toggleImage' ); 
         setShowImage( !showImage );
+        
     }
 
     // like button put request
@@ -36,15 +37,15 @@ function GalleryItem (props){
         <div className = "imageBlock">
             {
                 showImage ?
-            <img className= "image" src={props.gallery.path} alt ={props.gallery.description} onClick={ toggleImage } />:
-            <div>
-            <h2  onClick={ toggleImage }>{ props.gallery.description }</h2> 
-            </div>// false
+            <img className= "image" src={props.gallery.path} alt ={props.gallery.description} onClick={ toggleImage } />://true
+            <h2 className= "description"  onClick={ toggleImage }>{ props.gallery.description }</h2> 
+           // false
             }
+            <div className = 'likes'>
             <p>Likes: {props.gallery.likes}</p>
 
             <button className = 'likeButton' onClick = { updateLikes }>Like!</button>
-            
+            </div>
         
         </div>
         

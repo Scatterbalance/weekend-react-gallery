@@ -34,8 +34,6 @@ const getGallery=()=>{
         </header>
         <Body gallery = {gallery} getGallery = {getGallery}/>
         
-        <p>{JSON.stringify(gallery)}Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
       </div>
     );
 }
